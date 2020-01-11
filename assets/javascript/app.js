@@ -8,13 +8,16 @@ var seconds = document.getElementById("gameStatePrompt").textContent;
 var countdown = setInterval(function() {
     seconds--;
     document.getElementById("gameStatePrompt").textContent = seconds;
-    if (seconds <= 0) {
+    if (seconds < 0) {
         clearInterval(countdown);
         var score = confirm("Time's Up!  Correct Answers: " + wins + " Incorrect Answer: " + losses);
 
+            function check1() {
+                var question1 = document.getElementById("answer1B").checked;
+                    document.getElementById("userGuess1").innerHTML = question1;
+        };
 
-    } 
-    
+    };
 }, 1000);
 
 
