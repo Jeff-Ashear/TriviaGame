@@ -1,28 +1,29 @@
 //timer counting down in seconds
     //javascript timer function
 
-$("#startButton").click(function() {
-    $("#gameStatePrompt").text(10);
-    $("#startBtnDiv").empty();
+var wins = 10
+var losses = 0
 
-    $("#answer1A").text("yes");
-    $("#answer1A").text("no");
-    $("#answer1A").text("maybe");
-    // 
-    var seconds = document.getElementById("gameStatePrompt").textContent;
-    var countdown = setInterval(function() {
-        seconds--;
-        document.getElementById("gameStatePrompt").textContent = seconds;
-        if (seconds <= 0) clearInterval(countdown);
-        // if (seconds <= 0)
-        // console.log(seconds)
-    }, 1000);
+var seconds = document.getElementById("gameStatePrompt").textContent;
+var countdown = setInterval(function() {
+    seconds--;
+    document.getElementById("gameStatePrompt").textContent = seconds;
+    if (seconds <= 0) {
+        clearInterval(countdown);
+        var score = confirm("Time's Up!  Correct Answers: " + wins + " Incorrect Answer: " + losses);
 
+
+    } 
+    
+}, 1000);
 
 
 
 
-})
+
+
+
+
 
 
 

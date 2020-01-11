@@ -14,15 +14,13 @@
 <body>
 
     <header>
-        <h1 id="gameStatePrompt">Trivia is Happening! Go!</h1>
+        <h1 id="gameStatePrompt">5</h1>
     </header>
 
     <div class="row d-flex justify-content-center" id="gameCard">
         <div class="jumbotron">
-            <dir class="d-flex justify-content-center" id="startBtnDiv">
-                <button type="button" class="btn btn-success" id="startButton">Click to Start!</button>
-            </dir>
-            <h1 class="display-4">Imagine that I am a question...</h1>
+            
+            <h1 class="display-4">Anser the questions before the time runs out!</h1>
             <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
             <hr class="my-4">
             <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
@@ -39,9 +37,9 @@
 
             <form id="trivaQuestions" method="POST">
                 <div id="question1">
-                    <input type="radio" name="group1" value="1">1</input>
-                    <input type="radio" name="group1" value="2">2</input>
-                    <input type="radio" name="group1" value="3">3</input>
+                    <input type="radio" name="group1" id="answer1A" value="1">1</input>
+                    <input type="radio" name="group1" id="answer1B" value="2">2</input>
+                    <input type="radio" name="group1" id="answer1C" value="3">3</input>
                 </div>
             </form>
           
