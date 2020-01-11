@@ -1,0 +1,16 @@
+header {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: solid;
+    border-width: 12px;
+    padding: 8px;
+}
+
+.card {
+background-color: yellow;
+}
+
+.display-4 {
+    width: 85%;
+}
+

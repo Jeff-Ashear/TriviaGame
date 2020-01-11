@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="gameStatePrompt">Trivia is Happening! Go!</h1>
+    </header>
+
+    <div class="row d-flex justify-content-center" id="gameCard">
+        <div class="jumbotron">
+            <dir class="d-flex justify-content-center" id="startBtnDiv">
+                <button type="button" class="btn btn-success" id="startButton">Click to Start!</button>
+            </dir>
+            <h1 class="display-4">Imagine that I am a question...</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+
+            <!-- <div class="buttons d-flex justify-content-center">
+                <button type="button" class="btn btn-dark" id="Guess1A">Answer Number 1</button><br>
+
+                <button type="button" class="btn btn-dark" id="Guess1B">Answer Number 2</button><br>
+
+                <button type="button" class="btn btn-dark" id="Guess1C">Answer Number 3</button><br>
+
+                <button type="button" class="btn btn-dark" id="Guess1D">Answer Number 4</button><br>
+            </div> -->
+
+            <form id="trivaQuestions" method="POST">
+                <div id="question1">
+                    <input type="radio" name="group1" value="1">1</input>
+                    <input type="radio" name="group1" value="2">2</input>
+                    <input type="radio" name="group1" value="3">3</input>
+                </div>
+            </form>
+          
+            <div class="d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Your answer is:</h5>
+                      <h6 class="card-subtitle mb-2 text-muted" id="userGuess1">Card subtitle</h6>
+                    </div>
+                </div>
+            </div>
+        
+        
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div> -->
+    </div>
+ <script src="assets/javascript/app.js"></script>   
+</body>
+</html>
