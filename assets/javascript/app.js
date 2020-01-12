@@ -63,6 +63,14 @@ var countdown = setInterval(function() {
                 losses = losses + 1
             }
 
+            if(document.getElementById('answer7A').checked) {           
+                console.log("correct answer detected")
+                wins = wins + 1
+            } else {
+                console.log("incorrect answer detected")
+                losses = losses + 1
+            }
+
 
 
 
