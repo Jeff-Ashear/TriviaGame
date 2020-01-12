@@ -14,33 +14,96 @@
 <body>
 
     <header>
-        <h1 id="gameStatePrompt">10</h1>
+        <div class="fixed-top">
+            <h1 id="gameStatePrompt">10</h1>
+        </div>
     </header>
 
     <div class="row d-flex justify-content-center" id="gameCard">
         <div class="jumbotron">
             
-            <h1 class="display-4">Anser the questions before the time runs out!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <h1 class="display-4">Name the sculptors before the time runs out!</h1>
+            
             <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+           
 
-            <!-- <div class="buttons d-flex justify-content-center">
-                <button type="button" class="btn btn-dark" id="Guess1A">Answer Number 1</button><br>
 
-                <button type="button" class="btn btn-dark" id="Guess1B">Answer Number 2</button><br>
 
-                <button type="button" class="btn btn-dark" id="Guess1C">Answer Number 3</button><br>
+           <div class="card">
+                <form id="trivaQuestions" method="POST">
+                    <div class="text-center">
+                        <img src="assets/images/JewettReady1.jpg" class="rounded">
+                    </div>
+                    <div id="question1" class="text-center">
+                        <input type="radio" name="group1" id="answer1A" value="1">Joseph Cornell     </input>
+                        <input type="radio" name="group1" id="answer1B" value="2">Ellen Jewett     </input>
+                        <input type="radio" name="group1" id="answer1C" value="3">Janice Lowry     </input>
+                        <input type="radio" name="group1" id="answer1D" value="4">Noah Purifoy     </input>
+                    </div>
+           </div><br>
+               
+               <div class="card">
+                    <div class="text-center">
+                        <img src="assets/images/Yuanxing Liang Spring Mang.jpg" class="rounded">
+                    </div>
+                    <div id="question2" class="text-center">
+                        <input type="radio" name="group2" id="answer2A" value="1">Mark Rothco     </input>
+                        <input type="radio" name="group2" id="answer2B" value="2">Bud Sparhawk</input>
+                        <input type="radio" name="group2" id="answer2C" value="3">Yuanxing Liang Spring Mang</input>
+                        <input type="radio" name="group2" id="answer2D" value="4">Paul Klee</input>
+                    </div>
+               </div><br>
 
-                <button type="button" class="btn btn-dark" id="Guess1D">Answer Number 4</button><br>
-            </div> -->
+               <div class="card">
+                    <div class="text-center">
+                        <img src="assets/images/Jewett5.jpg" class="rounded">
+                    </div>
+                    <div id="question3" class="text-center">
+                        <input type="radio" name="group3" id="answer3A" value="1">Ellen Jewett</input>
+                        <input type="radio" name="group3" id="answer3B" value="2">Pablo Picasso</input>
+                        <input type="radio" name="group3" id="answer3C" value="3">Louise Nevelson</input>
+                        <input type="radio" name="group3" id="answer3D" value="4">Banksy</input>
+                    </div>
+               </div><br>
 
-            <form id="trivaQuestions" method="POST">
-                <div id="question1">
-                    <input type="radio" name="group1" id="answer1A" value="1">1</input>
-                    <input type="radio" name="group1" id="answer1B" value="2">2</input>
-                    <input type="radio" name="group1" id="answer1C" value="3">3</input>
-                </div>
+                <div class="card">
+                    <div class="text-center">
+                        <img src="assets/images/Freya Jobbins.jpg" class="rounded">
+                    </div>
+                    <div id="question4" class="text-center">
+                        <input type="radio" name="group4" id="answer4A" value="1">Freya Jobbins</input>
+                        <input type="radio" name="group4" id="answer4B" value="2">George Herms</input>
+                        <input type="radio" name="group4" id="answer4C" value="3">La Wilson</input>
+                        <input type="radio" name="group4" id="answer4D" value="4">Daniel Spoerri</input>
+                    </div>
+                </div><br>
+
+                <div class="card">
+                    <div class="text-center">
+                        <img src="assets/images/Jewett4.jpg" class="rounded">
+                    </div>
+                    <div id="question5" class="text-center">
+                        <input type="radio" name="group5" id="answer5A" value="1">Jeff Wassmann</input>
+                        <input type="radio" name="group5" id="answer5B" value="2">Kurt Schwitters</input>
+                        <input type="radio" name="group5" id="answer5C" value="3">Arman</input>
+                        <input type="radio" name="group5" id="answer5D" value="4">Ellen Jewett</input>
+                    </div>
+                </div><br>
+
+               <div class="card">
+                    <div class="text-center">
+                        <img src="assets/images/moore.jpg" class="rounded">
+                    </div>
+                    <div id="question5" class="text-center">
+                        <input type="radio" name="group6" id="answer6A" value="1">Greg Colson</input>
+                        <input type="radio" name="group6" id="answer6B" value="2">Henry Moore</input>
+                        <input type="radio" name="group6" id="answer6C" value="3">John Chamberlain</input>
+                        <input type="radio" name="group6" id="answer6D" value="4">Lonnie Holley</input>
+                    </div>
+               </div><br>
+
+
+
             </form>
           
             <div class="d-flex justify-content-center">

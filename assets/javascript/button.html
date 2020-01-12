@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="radio" name="GFG" id="GFG" value="GeeksforGeeks">GeeksforGeeks<br>
+
+        <input type="radio" name="GFG" id="HTML" value="HTML">HTML<br>
+
+        <button type="button" onclick="display()">Submit</button>        
+    </form>
+
+    <div id="disp" style="color: green; font-size: 18px; "></div>
+</body>
+
+    <script>
+
+        var score = 0
+        function display() {
+            if(document.getElementById('GFG').checked) {
+               score = score + 1
+               console.log(score)
+            } else if(document.getElementById('HTML').checked) {
+               score = score - 1
+               console.log(score)
+            }
+
+        }
+    </script>
+</html>

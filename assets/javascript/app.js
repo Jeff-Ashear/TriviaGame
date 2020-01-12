@@ -1,7 +1,7 @@
 //timer counting down in seconds
     //javascript timer function
 
-var wins = 10
+var wins = 0
 var losses = 0
 
 var seconds = document.getElementById("gameStatePrompt").textContent;
@@ -10,16 +10,67 @@ var countdown = setInterval(function() {
     document.getElementById("gameStatePrompt").textContent = seconds;
     if (seconds < 0) {
         clearInterval(countdown);
+        check1()
         var score = confirm("Time's Up!  Correct Answers: " + wins + " Incorrect Answer: " + losses);
+        console.log("time's up")
+        
+        function check1() {
+            if(document.getElementById('answer1B').checked) {           
+                console.log("correct answer detected")
+                wins = wins + 1
+            } else {
+                console.log("incorrect answer detected")
+                losses = losses + 1
+            }
 
-            function check1() {
-                var question1 = document.getElementById("answer1B").checked;
-                    document.getElementById("userGuess1").innerHTML = question1;
+            if(document.getElementById('answer2C').checked) {           
+                console.log("correct answer detected")
+                wins = wins + 1
+            } else {
+                console.log("incorrect answer detected")
+                losses = losses + 1
+            }
+
+            if(document.getElementById('answer3A').checked) {           
+                console.log("correct answer detected")
+                wins = wins + 1
+            } else {
+                console.log("incorrect answer detected")
+                losses = losses + 1
+            }
+
+            if(document.getElementById('answer4A').checked) {           
+                console.log("correct answer detected")
+                wins = wins + 1
+            } else {
+                console.log("incorrect answer detected")
+                losses = losses + 1
+            }
+
+            if(document.getElementById('answer5D').checked) {           
+                console.log("correct answer detected")
+                wins = wins + 1
+            } else {
+                console.log("incorrect answer detected")
+                losses = losses + 1
+            }
+
+            if(document.getElementById('answer6B').checked) {           
+                console.log("correct answer detected")
+                wins = wins + 1
+            } else {
+                console.log("incorrect answer detected")
+                losses = losses + 1
+            }
+
+
+
+
         };
 
+        
     };
 }, 1000);
-
 
 
 

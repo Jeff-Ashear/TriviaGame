@@ -1,9 +1,13 @@
-header {
+.fixed-top {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: red;
     border-style: solid;
-    border-width: 12px;
+    border-width: 4px;
+    border-color: white;
     padding: 8px;
+    background-image: url("../images/HeaderBG.jpg")
 }
 
 .card {
@@ -14,3 +18,13 @@ background-color: yellow;
     width: 85%;
 }
 
+img {
+    padding: 5px;
+}
+.card {
+    background-color: grey;
+    border-style: ridge;
+    border-width: 12px;
+    border-color: darkgrey;
+    border-radius: 8px;
+}
