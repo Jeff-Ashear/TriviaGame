@@ -10,12 +10,14 @@
     background-image: url("../images/HeaderBG.jpg")
 }
 
-.card {
-background-color: yellow;
+.display-4 {
+    text-align: center;
+    width: 85%;
 }
 
-.display-4 {
-    width: 85%;
+p {
+    color: orange;
+    font-size: 26px;
 }
 
 img {
