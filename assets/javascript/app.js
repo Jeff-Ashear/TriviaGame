@@ -17,6 +17,8 @@ var countdown = setInterval(function() {
         check1()
         var score = confirm("Time's Up!  Correct Answers: " + wins + " Incorrect Answer: " + losses);
         console.log("time's up")
+        //set up rotating an random images off the timer here
+        
 
 
         function check1() {
@@ -76,6 +78,38 @@ var countdown = setInterval(function() {
                 losses = losses + 1
             }
 
+            if (document.getElementById('answer8B').checked) {
+                console.log("correct anser detected")
+                wins = wins + 1
+            } else {
+                console.log("incorrect answer detected")
+                losses = losses + 1
+            }
+
+            if (document.getElementById('answer9D').checked) {
+                console.log("correct answer detected")
+                wins = wins + 1
+            } else {
+                console.log("incorrect answer detected")
+                losses = losses + 1
+            }
+
+            if (document.getElementById('answer10B').checked) {
+                console.log("correct answer detected")
+                wins = wins + 1
+            } else {
+                console.log("incorrect answer detected")
+                loses = loses + 1
+            }
+
+            if (document.getElementById('answer11C').checked) {
+                console.log("correct answer detected")
+                wins = wins + 1
+            } else {
+                console.log("incorrect answer detected")
+                losses = losses + 1
+            }
+ 
         };
 
 
