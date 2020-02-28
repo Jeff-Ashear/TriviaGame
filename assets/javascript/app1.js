@@ -6,6 +6,28 @@ var losses = 0
 
 // var seconds = document.getElementById("gameStatePrompt").textContent;
 var seconds = $("#gameStatePrompt").text();
+var backgrounds = [
+    "../images/crowdsurfing.jpg",
+    "../images/nin.png",
+    "../images/beck.jpg",
+    "../images/REM.jpg",
+    "../images/zappa.jpeg",
+    "../images/soundgarden.jpg",
+    "../images/trent.jpg",
+    "../images/radiohead",
+    "../images/tom-morello.jpg",
+    "../images/lateralis.jpg",
+    "../images/GNR.jpg",
+    "../images/janesaddiction.jpg",
+    "../images/tool.jpg",
+    "../images/beavis-and-butthead-nin.jpg",
+    "../images/aliceInChains.jpg",
+    "../images/lateralis2.png",
+    "../images/trent2.jpg",
+    "../images/Rage-Against-the-Machine.jpg",
+    "../images/frank.jpg",
+    "../images/kurtd.jpg",
+]
 
 var countdown = setInterval(function() {
     seconds--;
