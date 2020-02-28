@@ -13,7 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body id=bGPics>
 
     <header>
         <div class="fixed-top">
@@ -21,166 +21,170 @@
         </div>
     </header>
 
-    <div class="row d-flex justify-content-center" id="gameCard">
-        <div class="jumbotron">
+    <!-- <div class="row d-flex justify-content-center" id="gameCard"> -->
+        <!-- <div class="jumbotron"> -->
 
-            <h1 class="display-4">How well do you know 90's music?<br>Can you answer the questoins before the time runs
-                out?</h1>
+           <div class="instructions">
+                <h1 class="display-4"><br><br>How well do you know 90's music?<br>Can you answer the questoins before the time runs
+                    out?</h1>
+               
+                <hr class="my-4">
+           </div>
 
-            <hr class="my-4">
 
 
-
-
-            <div class="card">
-                <form id="trivaQuestions" method="POST">
+            <div class="gameboard">
+    
+                <div class="card">
+                    <form id="trivaQuestions" method="POST">
+                        <div class="text-center">
+                            <p>1. The (often one-man) band who's work revitalized use of the synthesizer, and revolutionized
+                                the presence of electronics in music is:
+                        </div>
+                        <div id="question1" class="text-center">
+                            <input type="radio" name="group1" id="answer1A" value="1">Sound Garden </input>
+                            <input type="radio" name="group1" id="answer1B" value="2">Nine Inch Nails </input>
+                            <input type="radio" name="group1" id="answer1C" value="3">Beck </input>
+                            <input type="radio" name="group1" id="answer1D" value="4">Radiohead </input>
+                        </div>
+                </div><br>
+    
+                <div class="card">
                     <div class="text-center">
-                        <p>1. The (often one-man) band who's work revitalized use of the synthesizer, and revolutionized
-                            the presence of electronics in music is:
+                        <p>2. If you ask someone to name a band from the 90s, chances are they will say:</p>
                     </div>
-                    <div id="question1" class="text-center">
-                        <input type="radio" name="group1" id="answer1A" value="1">Sound Garden </input>
-                        <input type="radio" name="group1" id="answer1B" value="2">Nine Inch Nails </input>
-                        <input type="radio" name="group1" id="answer1C" value="3">Beck </input>
-                        <input type="radio" name="group1" id="answer1D" value="4">Radiohead </input>
+                    <div id="question2" class="text-center">
+                        <input type="radio" name="group2" id="answer2A" value="1">Tool </input>
+                        <input type="radio" name="group2" id="answer2B" value="2">Alice in Chains </input>
+                        <input type="radio" name="group2" id="answer2C" value="3">Nirvana </input>
+                        <input type="radio" name="group2" id="answer2D" value="4">Silver Chair </input>
                     </div>
-            </div><br>
-
-            <div class="card">
-                <div class="text-center">
-                    <p>2. If you ask someone to name a band from the 90s, chances are they will say:</p>
-                </div>
-                <div id="question2" class="text-center">
-                    <input type="radio" name="group2" id="answer2A" value="1">Tool </input>
-                    <input type="radio" name="group2" id="answer2B" value="2">Alice in Chains </input>
-                    <input type="radio" name="group2" id="answer2C" value="3">Nirvana </input>
-                    <input type="radio" name="group2" id="answer2D" value="4">Silver Chair </input>
-                </div>
-            </div><br>
-
-            <div class="card">
-                <div class="text-center">
-                    <p>3. The 90s act most heavily influenced by Bob Dylan's lyrics is:</p>
-                </div>
-                <div id="question3" class="text-center">
-                    <input type="radio" name="group3" id="answer3A" value="1">Beck </input>
-                    <input type="radio" name="group3" id="answer3B" value="2">Pavement </input>
-                    <input type="radio" name="group3" id="answer3C" value="3">Foo Fighters </input>
-                    <input type="radio" name="group3" id="answer3D" value="4">The Black Crows </input>
-                </div>
-            </div><br>
-
-            <div class="card">
-                <div class="text-center">
-                    <p>4. The "Seattle Sound" made famous by Nirvana was invented by_____ in _____.</p>
-                </div>
-                <div id="question4" class="text-center">
-                    <input type="radio" name="group4" id="answer4A" value="1">Kyuss in L.A.</input>
-                    <input type="radio" name="group4" id="answer4B" value="2">Pearl Jam in Seattle</input>
-                    <input type="radio" name="group4" id="answer4C" value="3">Bush in London, England</input>
-                    <input type="radio" name="group4" id="answer4D" value="4">Nirvana in Seattle</input>
-                </div>
-            </div><br>
-
-            <div class="card">
-                <div class="text-center">
-                    <p>5. The band best know for combining hip-hop and grunge, as well as exquisite guitar-craft is:</p>
-                </div>
-                <div id="question5" class="text-center">
-                    <input type="radio" name="group5" id="answer5A" value="1">Nick Cave and the Bad Seeds</input>
-                    <input type="radio" name="group5" id="answer5B" value="2">Stone Temple Pilots</input>
-                    <input type="radio" name="group5" id="answer5C" value="3">Red Hot Chili Peppers</input>
-                    <input type="radio" name="group5" id="answer5D" value="4">Rage Against the Machine</input>
-                </div>
-            </div><br>
-
-            <div class="card">
-                <div class="text-center">
-                    <p>6. Mike Patton heads the band_____, known for combining avante garde jazz, disco, funk and death
-                        metal</p>
-                </div>
-                <div id="question6" class="text-center">
-                    <input type="radio" name="group6" id="answer6A" value="1">Primus</input>
-                    <input type="radio" name="group6" id="answer6B" value="2">Mr. Bungle</input>
-                    <input type="radio" name="group6" id="answer6C" value="3">Faith No More</input>
-                    <input type="radio" name="group6" id="answer6D" value="4">Temple of the Dog</input>
-                </div>
-            </div><br>
-
-            <div class="card">
-                <div class="text-center">
-                    <p>7. Experimental, playful, sophisticated, conceptual, complex, and swedish are all adjectives
-                        applying to which artist:</p>
-                </div>
-                <div id="question7" class="text-center">
-                    <input type="radio" name="group7" id="answer7A" value="1">Bjork</input>
-                    <input type="radio" name="group7" id="answer7B" value="2">Kennhy Wayne Shepard</input>
-                    <input type="radio" name="group7" id="answer7C" value="3">Jeff Buckley</input>
-                    <input type="radio" name="group7" id="answer7D" value="4">Jamiroquai</input>
-                </div>
-            </div><br>
-
-            <div class="card">
-                <div class="text-center">
-                    <p>8. The guitarist for the band Radiohead is:</p>
-                </div>
-                <div id="question8" class="text-center">
-                    <input type="radio" name="group8" id="answer8A" value="1">Tom Morello</input>
-                    <input type="radio" name="group8" id="answer8B" value="2">Johnny Greenwood</input>
-                    <input type="radio" name="group8" id="answer8C" value="3">John Fuentes</input>
-                    <input type="radio" name="group8" id="answer8D" value="4">Dave Navarro</input>
-                </div>
-            </div><br>
-
-            <div class="card">
-                <div class="text-center">
-                    <p>9. The drummer for the band Jane's Addiction is:</p>
-                </div>
-                <div id="question9" class="text-center">
-                    <input type="radio" name="group9" id="answer9A" value="1">Danny Carey</input>
-                    <input type="radio" name="group9" id="answer9B" value="2">Jon Fishman</input>
-                    <input type="radio" name="group9" id="answer9C" value="3">Matt Cameron</input>
-                    <input type="radio" name="group9" id="answer9D" value="4">Stephen Perkins</input>
-                </div>
-            </div><br>
-
-            <div class="card">
-                <div class="text-center">
-                    <p>10. Pearl Jam's first album was titled:</p>
-                </div>
-                <div id="question10" class="text-center">
-                    <input type="radio" name="group10" id="answer10A" value="1">Vitology</input>
-                    <input type="radio" name="group10" id="answer10B" value="2">Ten</input>
-                    <input type="radio" name="group10" id="answer10C" value="3">Binaural</input>
-                    <input type="radio" name="group10" id="answer10D" value="4">No Code</input>
-                </div>
-            </div><br>
-
-            <div class="card">
-                <div class="text-center">
-                    <p>11. Which act combines rock, blues, experimental jazz, classical, avante guarde, pop, and doo-wap?</p>
-                </div>
-                <div id="question11" class="text-center">
-                    <input type="radio" name="group11" id="answer11A" value="1">They Might Be Giants</input>
-                    <input type="radio" name="group11" id="answer11B" value="2">Faith No More</input>
-                    <input type="radio" name="group11" id="answer11C" value="3">Frank Zappa</input>
-                    <input type="radio" name="group11" id="answer11D" value="4">Ween</input>
-                </div>
-            </div><br>
-
-            </form>
-
-            <div class="d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Your answer is:</h5>
-                        <h6 class="card-subtitle mb-2 text-muted" id="userGuess1">Card subtitle</h6>
+                </div><br>
+    
+                <div class="card">
+                    <div class="text-center">
+                        <p>3. The 90s act most heavily influenced by Bob Dylan's lyrics is:</p>
+                    </div>
+                    <div id="question3" class="text-center">
+                        <input type="radio" name="group3" id="answer3A" value="1">Beck </input>
+                        <input type="radio" name="group3" id="answer3B" value="2">Pavement </input>
+                        <input type="radio" name="group3" id="answer3C" value="3">Foo Fighters </input>
+                        <input type="radio" name="group3" id="answer3D" value="4">The Black Crows </input>
+                    </div>
+                </div><br>
+    
+                <div class="card">
+                    <div class="text-center">
+                        <p>4. The "Seattle Sound" made famous by Nirvana was invented by_____ in _____.</p>
+                    </div>
+                    <div id="question4" class="text-center">
+                        <input type="radio" name="group4" id="answer4A" value="1">Kyuss in L.A.</input>
+                        <input type="radio" name="group4" id="answer4B" value="2">Pearl Jam in Seattle</input>
+                        <input type="radio" name="group4" id="answer4C" value="3">Bush in London, England</input>
+                        <input type="radio" name="group4" id="answer4D" value="4">Nirvana in Seattle</input>
+                    </div>
+                </div><br>
+    
+                <div class="card">
+                    <div class="text-center">
+                        <p>5. The band best know for combining hip-hop and grunge, as well as exquisite guitar-craft is:</p>
+                    </div>
+                    <div id="question5" class="text-center">
+                        <input type="radio" name="group5" id="answer5A" value="1">Nick Cave and the Bad Seeds</input>
+                        <input type="radio" name="group5" id="answer5B" value="2">Stone Temple Pilots</input>
+                        <input type="radio" name="group5" id="answer5C" value="3">Red Hot Chili Peppers</input>
+                        <input type="radio" name="group5" id="answer5D" value="4">Rage Against the Machine</input>
+                    </div>
+                </div><br>
+    
+                <div class="card">
+                    <div class="text-center">
+                        <p>6. Mike Patton heads the band_____, known for combining avante garde jazz, disco, funk and death
+                            metal</p>
+                    </div>
+                    <div id="question6" class="text-center">
+                        <input type="radio" name="group6" id="answer6A" value="1">Primus</input>
+                        <input type="radio" name="group6" id="answer6B" value="2">Mr. Bungle</input>
+                        <input type="radio" name="group6" id="answer6C" value="3">Faith No More</input>
+                        <input type="radio" name="group6" id="answer6D" value="4">Temple of the Dog</input>
+                    </div>
+                </div><br>
+    
+                <div class="card">
+                    <div class="text-center">
+                        <p>7. Experimental, playful, sophisticated, conceptual, complex, and swedish are all adjectives
+                            applying to which artist:</p>
+                    </div>
+                    <div id="question7" class="text-center">
+                        <input type="radio" name="group7" id="answer7A" value="1">Bjork</input>
+                        <input type="radio" name="group7" id="answer7B" value="2">Kennhy Wayne Shepard</input>
+                        <input type="radio" name="group7" id="answer7C" value="3">Jeff Buckley</input>
+                        <input type="radio" name="group7" id="answer7D" value="4">Jamiroquai</input>
+                    </div>
+                </div><br>
+    
+                <div class="card">
+                    <div class="text-center">
+                        <p>8. The guitarist for the band Radiohead is:</p>
+                    </div>
+                    <div id="question8" class="text-center">
+                        <input type="radio" name="group8" id="answer8A" value="1">Tom Morello</input>
+                        <input type="radio" name="group8" id="answer8B" value="2">Johnny Greenwood</input>
+                        <input type="radio" name="group8" id="answer8C" value="3">John Fuentes</input>
+                        <input type="radio" name="group8" id="answer8D" value="4">Dave Navarro</input>
+                    </div>
+                </div><br>
+    
+                <div class="card">
+                    <div class="text-center">
+                        <p>9. The drummer for the band Jane's Addiction is:</p>
+                    </div>
+                    <div id="question9" class="text-center">
+                        <input type="radio" name="group9" id="answer9A" value="1">Danny Carey</input>
+                        <input type="radio" name="group9" id="answer9B" value="2">Jon Fishman</input>
+                        <input type="radio" name="group9" id="answer9C" value="3">Matt Cameron</input>
+                        <input type="radio" name="group9" id="answer9D" value="4">Stephen Perkins</input>
+                    </div>
+                </div><br>
+    
+                <div class="card">
+                    <div class="text-center">
+                        <p>10. Pearl Jam's first album was titled:</p>
+                    </div>
+                    <div id="question10" class="text-center">
+                        <input type="radio" name="group10" id="answer10A" value="1">Vitology</input>
+                        <input type="radio" name="group10" id="answer10B" value="2">Ten</input>
+                        <input type="radio" name="group10" id="answer10C" value="3">Binaural</input>
+                        <input type="radio" name="group10" id="answer10D" value="4">No Code</input>
+                    </div>
+                </div><br>
+    
+                <div class="card">
+                    <div class="text-center">
+                        <p>11. Which act combines rock, blues, experimental jazz, classical, avante guarde, pop, and doo-wap?</p>
+                    </div>
+                    <div id="question11" class="text-center">
+                        <input type="radio" name="group11" id="answer11A" value="1">They Might Be Giants</input>
+                        <input type="radio" name="group11" id="answer11B" value="2">Faith No More</input>
+                        <input type="radio" name="group11" id="answer11C" value="3">Frank Zappa</input>
+                        <input type="radio" name="group11" id="answer11D" value="4">Ween</input>
+                    </div>
+                </div><br>
+    
+                </form>
+    
+                <div class="d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Your answer is:</h5>
+                            <h6 class="card-subtitle mb-2 text-muted" id="userGuess1">Card subtitle</h6>
+                        </div>
                     </div>
                 </div>
-            </div>
+    
+</div>
 
-
-        </div>
+        <!-- </div> -->
 
 
 
@@ -198,7 +202,7 @@
               <a href="#" class="card-link">Another link</a>
             </div>
           </div> -->
-    </div>
+    <!-- </div> -->
     <script src="assets/javascript/app1.js"></script>
 </body>
 

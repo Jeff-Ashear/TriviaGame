@@ -10,9 +10,22 @@
     background-image: url("../images/HeaderBG.jpg")
 }
 
-.display-4 {
+#bGPics {
+    background-image: url("../images/beavis-and-butthead-nin.jpg");
+}
+
+.instructions {
     text-align: center;
     width: 85%;
+    font-weight: 300;
+    color: red;
+    text-shadow: 2px 2px 4px black;
+    border-width: 6px;
+    border-radius: 10px;
+    border-color: orangered;
+    border-style: double;
+    background-color: palegoldenrod;
+    margin: auto;
 }
 
 p {
