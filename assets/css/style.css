@@ -43,4 +43,39 @@ img {
     border-color: darkgrey;
     border-radius: 8px;
     margin-top: 20px;
+    text-shadow: 2px 2px 2px black;
+    animation: 5s infinite;
+    animation-name: text;
 }
+
+@keyframes text {
+    0% {
+        text-shadow: 2px 2px 2px black, 2px 2px 2px black, 2px 2px 2px black, 2px 2px 2px black;
+    }
+    25% {
+        text-shadow: 2px -2px 3px orangered,  2px -2px 3px orangered,  2px -2px 3px orangered,  2px -2px 3px orangered;
+    }
+    50% {
+        text-shadow: -2px 2px 3px green, -2px 2px 3px green, -2px 2px 4px green, -2px 2px 4px green;
+    }
+    75% {
+        text-shadow: -2px -2px 4px blue, -2px -2px 4px blue, -2px -2px 3px blue, -2px -2px 3px blue;
+    }
+    100% {
+        text-shadow: 2px -2px 3px yellow, 2px -2px 3px yellow, 2px -2px 3px yellow, 2px -2px 3px yellow;
+    }
+
+}
+
+.card:hover {
+    background-color: whitesmoke;
+    box-shadow: 4px 4px 4px red;
+}
+
+#restart {
+    text-align: center;
+    font-size: 3em;
+    margin: auto 10;
+}
+
+
