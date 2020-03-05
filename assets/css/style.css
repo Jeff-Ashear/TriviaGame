@@ -75,7 +75,16 @@ img {
 #restart {
     text-align: center;
     font-size: 3em;
-    margin: auto 10;
+    margin: 10px 10px;
+    padding: 10px;
+    border-width: 2px;
+    border-radius: 15px;
+}
+
+#restart:hover {
+    background-color: blue;
+    box-shadow: 4px 4px 10px blueviolet;
+    text-shadow: 2px 2px 10px red;
 }
 
 
