@@ -64,7 +64,7 @@ function gameTimer() {
             clearInterval(countdown);
             check1()
             $(".gameboard").empty();
-            $("#bGPics").css('background-image', 'url("../assets/images/kyuss.jpg")');
+            $("#bGPics").css('background-image', 'url("./assets/images/kyuss.jpg")');
             $(".instructions").empty();
             $(".instructions").css("color", "black");
             $(".instructions").html("<br><br><br><br><h2>Game Over</h2><br><h3>You answered " + wins + " questions correctly.<br>You answered " + losses + " questions incorrectly.</h3>");
