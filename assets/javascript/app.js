@@ -163,7 +163,7 @@ function gameTimer() {
                     wins = wins + 1
                 } else {
                     console.log("incorrect answer detected")
-                    loses = loses + 1
+                    losses = losses + 1
                 }
 
                 if (document.getElementById('answer11C').checked) {
