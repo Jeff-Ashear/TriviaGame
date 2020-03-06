@@ -190,6 +190,8 @@ $(document).on("click", "#restart", function (event) {
     $("#gameStatePrompt").text(40);
     seconds = $("#gameStatePrompt").text();
     xeconds = 4;
+    wins = 0;
+    losses = 0;
     gameTimer();
     $(".instructions").empty();
     $(".instructions").html(`<h1 class="display-4"><br><br>How well do you know 90's music?<br>Can you answer the questoins before the time runs
